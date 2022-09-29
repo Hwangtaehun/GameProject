@@ -1,0 +1,2 @@
+C:\Users\r283\Desktop\Github\GameProject2022\ExploreGame\Intermediate\Build\Win64\UE4Editor\Development\ExploreGame\Definitions.ExploreGame.h
+C:\Users\r283\Desktop\Github\GameProject2022\ExploreGame\Source\ExploreGame\ExploreGame.h
