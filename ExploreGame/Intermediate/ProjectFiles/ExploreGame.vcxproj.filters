@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\ExploreGame.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{94B4D682-CEDB-4401-A2CE-D75741B40ED3}</UniqueIdentifier>
+      <UniqueIdentifier>{42E16F00-36D8-470A-AC96-440EBD2C786A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ExploreGame.Target.cs">
       <Filter>Source</Filter>
@@ -11,9 +11,8 @@
     <None Include="..\..\Source\ExploreGameEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
-    <None Include="..\..\PhotoR_Backgrounds.png" />
     <Filter Include="Config">
-      <UniqueIdentifier>{DE08C8A3-A1F3-4703-8083-995110197CA7}</UniqueIdentifier>
+      <UniqueIdentifier>{6E4636DF-C666-49B8-BF2D-E44A200EA548}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -31,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\ExploreGame">
-      <UniqueIdentifier>{C830EECC-D089-45CE-9C98-D5B68CB63562}</UniqueIdentifier>
+      <UniqueIdentifier>{5D96688A-0CB4-49DC-B14F-D91BD26DD38C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ExploreGame\ExploreGame.Build.cs">
       <Filter>Source\ExploreGame</Filter>
@@ -52,12 +51,6 @@
       <Filter>Source\ExploreGame</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\ExploreGame\ExploreGameGameMode.h">
-      <Filter>Source\ExploreGame</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\ExploreGame\UUserObject.cpp">
-      <Filter>Source\ExploreGame</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\ExploreGame\UUserObject.h">
       <Filter>Source\ExploreGame</Filter>
     </ClInclude>
   </ItemGroup>
