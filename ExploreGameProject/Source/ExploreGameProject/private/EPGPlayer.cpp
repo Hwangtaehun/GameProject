@@ -22,9 +22,14 @@ AEPGPlayer::AEPGPlayer()
 	springArmComp->SetupAttachment(RootComponent);
 	springArmComp->SetRelativeLocation(FVector(0, 70, 90));
 	springArmComp->TargetArmLength = 400;
+	springArmComp->bUsePawnControlRotation = true;
 
 	tpsCamComp = CreateDefaultSubobject<UCameraComponent>(TEXT("TpsCamComp"));
 	tpsCamComp->SetupAttachment(springArmComp);
+	tpsCamComp->bUsePawnControlRotation = false;
+
+	bUseControllerRotationYaw = true;
+	JumpMaxCount = 2;
 }
 
 // Called when the game starts or when spawned
@@ -39,6 +44,7 @@ void AEPGPlayer::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	Move();
 }
 
 // Called to bind functionality to input
@@ -46,5 +52,42 @@ void AEPGPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &AEPGPlayer::Turn);
+	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &AEPGPlayer::LookUp);
+	PlayerInputComponent->BindAxis(TEXT("Horizontal"), this, &AEPGPlayer::InputHorizontal);
+	PlayerInputComponent->BindAxis(TEXT("Vertical"), this, &AEPGPlayer::InputVertical);
+	PlayerInputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &AEPGPlayer::InputJump);
+}
+
+void AEPGPlayer::Turn(float value)
+{
+	AddControllerYawInput(value);
+}
+
+void AEPGPlayer::LookUp(float value)
+{
+	AddControllerPitchInput(value);
+}
+
+void AEPGPlayer::InputHorizontal(float value)
+{
+	direction.Y = value;
+}
+
+void AEPGPlayer::InputVertical(float value)
+{
+	direction.X = value;
+}
+
+void AEPGPlayer::InputJump()
+{
+	Jump();
+}
+
+void AEPGPlayer::Move()
+{
+	direction = FTransform(GetControlRotation()).TransformVector(direction);
+	AddMovementInput(direction);
+	direction = FVector::ZeroVector;
 }
 

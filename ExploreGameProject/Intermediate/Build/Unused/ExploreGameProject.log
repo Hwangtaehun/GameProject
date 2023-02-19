@@ -2,17 +2,16 @@
   Parsing headers for ExploreGameProjectEditor
     Running UnrealHeaderTool "D:\Github\GameProject\ExploreGameProject\ExploreGameProject.uproject" "D:\Github\GameProject\ExploreGameProject\Intermediate\Build\Win64\ExploreGameProjectEditor\Development\ExploreGameProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\r283\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
   LogInit: Display: Loading text-based GConfig....
-  Reflection code generated for ExploreGameProjectEditor in 3.8673179 seconds
+  Reflection code generated for ExploreGameProjectEditor in 3.7155066 seconds
   Building ExploreGameProjectEditor...
   Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 6 actions with 16 processes...
-    [1/6] ExploreGameProject.init.gen.cpp
-    [2/6] EPGPlayer.cpp
-    [3/6] EPGPlayer.gen.cpp
-    [4/6] UE4Editor-ExploreGameProject-0015.lib
-       D:\Github\GameProject\ExploreGameProject\Intermediate\Build\Win64\UE4Editor\Development\ExploreGameProject\UE4Editor-ExploreGameProject-0015.lib 라이브러리 및 D:\Github\GameProject\ExploreGameProject\Intermediate\Build\Win64\UE4Editor\Development\ExploreGameProject\UE4Editor-ExploreGameProject-0015.exp 개체를 생성하고 있습니다.
-    [5/6] UE4Editor-ExploreGameProject-0015.dll
-       D:\Github\GameProject\ExploreGameProject\Intermediate\Build\Win64\UE4Editor\Development\ExploreGameProject\UE4Editor-ExploreGameProject-0015.suppressed.lib 라이브러리 및 D:\Github\GameProject\ExploreGameProject\Intermediate\Build\Win64\UE4Editor\Development\ExploreGameProject\UE4Editor-ExploreGameProject-0015.suppressed.exp 개체를 생성하고 있습니다.
-    [6/6] ExploreGameProjectEditor.target
-  Total time in Parallel executor: 1.62 seconds
-  Total execution time: 6.57 seconds
+  Building 5 actions with 16 processes...
+    [1/5] EPGPlayer.gen.cpp
+    [2/5] EPGPlayer.cpp
+    [3/5] UE4Editor-ExploreGameProject-0021.lib
+       D:\Github\GameProject\ExploreGameProject\Intermediate\Build\Win64\UE4Editor\Development\ExploreGameProject\UE4Editor-ExploreGameProject-0021.lib 라이브러리 및 D:\Github\GameProject\ExploreGameProject\Intermediate\Build\Win64\UE4Editor\Development\ExploreGameProject\UE4Editor-ExploreGameProject-0021.exp 개체를 생성하고 있습니다.
+    [4/5] UE4Editor-ExploreGameProject-0021.dll
+       D:\Github\GameProject\ExploreGameProject\Intermediate\Build\Win64\UE4Editor\Development\ExploreGameProject\UE4Editor-ExploreGameProject-0021.suppressed.lib 라이브러리 및 D:\Github\GameProject\ExploreGameProject\Intermediate\Build\Win64\UE4Editor\Development\ExploreGameProject\UE4Editor-ExploreGameProject-0021.suppressed.exp 개체를 생성하고 있습니다.
+    [5/5] ExploreGameProjectEditor.target
+  Total time in Parallel executor: 1.64 seconds
+  Total execution time: 6.28 seconds
