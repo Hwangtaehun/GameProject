@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\ExploreGameProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{F8DBFB54-A881-47BE-B308-6C3A9AD56242}</UniqueIdentifier>
+      <UniqueIdentifier>{B48EDD2C-8BF7-4A4C-9704-5F453B4F8BB2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ExploreGameProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{16CCB46A-EFFD-4F46-8964-C9491FEA5BFE}</UniqueIdentifier>
+      <UniqueIdentifier>{AD17B811-6B1C-47C5-A194-EC2F4BFB7377}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -23,15 +23,24 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
     <Filter Include="Source\ExploreGameProject">
-      <UniqueIdentifier>{B95480A4-D49F-4D2A-BACD-0F6A15847838}</UniqueIdentifier>
+      <UniqueIdentifier>{6C467BC0-3DB1-423C-B604-B1D71C1EE728}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ExploreGameProject\ExploreGameProject.Build.cs">
       <Filter>Source\ExploreGameProject</Filter>
     </None>
     <Filter Include="Source\ExploreGameProject\private">
-      <UniqueIdentifier>{795C02E3-60C7-4915-ACC5-41C8533CB6D2}</UniqueIdentifier>
+      <UniqueIdentifier>{4C776EEA-14E2-4267-B4FF-AC55F888A801}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\ExploreGameProject\private\Enemy.cpp">
+      <Filter>Source\ExploreGameProject\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ExploreGameProject\private\EnemyFSM.cpp">
+      <Filter>Source\ExploreGameProject\private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\ExploreGameProject\private\EPGPlayer.cpp">
       <Filter>Source\ExploreGameProject\private</Filter>
     </ClCompile>
@@ -42,8 +51,14 @@
       <Filter>Source\ExploreGameProject\private</Filter>
     </ClCompile>
     <Filter Include="Source\ExploreGameProject\public">
-      <UniqueIdentifier>{9BA3A9AE-A6C7-4676-9594-5E35797DF4AB}</UniqueIdentifier>
+      <UniqueIdentifier>{96C2E14F-D703-4E77-BBBB-53CCF75CCA8E}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\ExploreGameProject\public\Enemy.h">
+      <Filter>Source\ExploreGameProject\public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ExploreGameProject\public\EnemyFSM.h">
+      <Filter>Source\ExploreGameProject\public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\ExploreGameProject\public\EPGPlayer.h">
       <Filter>Source\ExploreGameProject\public</Filter>
     </ClInclude>
