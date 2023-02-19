@@ -14,4 +14,7 @@ class EXPLOREGAMEPROJECT_API AExploreGameProjectGameModeBase : public AGameModeB
 {
 	GENERATED_BODY()
 	
+public:
+	AExploreGameProjectGameModeBase();
+	~AExploreGameProjectGameModeBase();
 };

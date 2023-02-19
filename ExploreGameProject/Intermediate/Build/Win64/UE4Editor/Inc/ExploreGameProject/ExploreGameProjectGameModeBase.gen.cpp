@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "ExploreGameProject/ExploreGameProjectGameModeBase.h"
+#include "ExploreGameProject/public/ExploreGameProjectGameModeBase.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -43,7 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeExploreGameProjectGameModeBase() {}
 		{ "Comment", "/**\n * \n */" },
 		{ "HideCategories", "Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "ExploreGameProjectGameModeBase.h" },
-		{ "ModuleRelativePath", "ExploreGameProjectGameModeBase.h" },
+		{ "ModuleRelativePath", "public/ExploreGameProjectGameModeBase.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeExploreGameProjectGameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AExploreGameProjectGameModeBase, 2591118988);
+	IMPLEMENT_CLASS(AExploreGameProjectGameModeBase, 3174417472);
 	template<> EXPLOREGAMEPROJECT_API UClass* StaticClass<AExploreGameProjectGameModeBase>()
 	{
 		return AExploreGameProjectGameModeBase::StaticClass();

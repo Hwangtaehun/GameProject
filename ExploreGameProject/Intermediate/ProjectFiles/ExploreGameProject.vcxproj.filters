@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\ExploreGameProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{1363500A-1E5C-4734-8DDF-B0EEF8577465}</UniqueIdentifier>
+      <UniqueIdentifier>{F8DBFB54-A881-47BE-B308-6C3A9AD56242}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ExploreGameProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{B703AEED-972A-4D2A-A13B-6CB97746F6F4}</UniqueIdentifier>
+      <UniqueIdentifier>{16CCB46A-EFFD-4F46-8964-C9491FEA5BFE}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -24,14 +24,17 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\ExploreGameProject">
-      <UniqueIdentifier>{8DC03D6F-90EA-43A8-A284-BA81776CC9B1}</UniqueIdentifier>
+      <UniqueIdentifier>{B95480A4-D49F-4D2A-BACD-0F6A15847838}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ExploreGameProject\ExploreGameProject.Build.cs">
       <Filter>Source\ExploreGameProject</Filter>
     </None>
     <Filter Include="Source\ExploreGameProject\private">
-      <UniqueIdentifier>{A45F3464-2B28-433A-92F3-133D67FF86D6}</UniqueIdentifier>
+      <UniqueIdentifier>{795C02E3-60C7-4915-ACC5-41C8533CB6D2}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\ExploreGameProject\private\EPGPlayer.cpp">
+      <Filter>Source\ExploreGameProject\private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\ExploreGameProject\private\ExploreGameProject.cpp">
       <Filter>Source\ExploreGameProject\private</Filter>
     </ClCompile>
@@ -39,8 +42,11 @@
       <Filter>Source\ExploreGameProject\private</Filter>
     </ClCompile>
     <Filter Include="Source\ExploreGameProject\public">
-      <UniqueIdentifier>{68441438-37A6-4BFD-8899-A1F6746F337A}</UniqueIdentifier>
+      <UniqueIdentifier>{9BA3A9AE-A6C7-4676-9594-5E35797DF4AB}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\ExploreGameProject\public\EPGPlayer.h">
+      <Filter>Source\ExploreGameProject\public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\ExploreGameProject\public\ExploreGameProject.h">
       <Filter>Source\ExploreGameProject\public</Filter>
     </ClInclude>

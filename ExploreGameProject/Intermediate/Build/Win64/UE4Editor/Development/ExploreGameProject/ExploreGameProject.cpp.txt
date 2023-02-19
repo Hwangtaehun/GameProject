@@ -1,2 +1,2 @@
 D:\Github\GameProject\ExploreGameProject\Intermediate\Build\Win64\UE4Editor\Development\ExploreGameProject\Definitions.ExploreGameProject.h
-D:\Github\GameProject\ExploreGameProject\Source\ExploreGameProject\ExploreGameProject.h
+D:\Github\GameProject\ExploreGameProject\Source\ExploreGameProject\Public\ExploreGameProject.h

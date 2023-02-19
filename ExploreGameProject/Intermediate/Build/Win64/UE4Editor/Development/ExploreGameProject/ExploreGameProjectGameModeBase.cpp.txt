@@ -1,7 +1,8 @@
 D:\Github\GameProject\ExploreGameProject\Intermediate\Build\Win64\UE4Editor\Development\ExploreGameProject\Definitions.ExploreGameProject.h
-D:\Github\GameProject\ExploreGameProject\Source\ExploreGameProject\ExploreGameProjectGameModeBase.h
+D:\Github\GameProject\ExploreGameProject\Source\ExploreGameProject\Public\ExploreGameProjectGameModeBase.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
 D:\Github\GameProject\ExploreGameProject\Intermediate\Build\Win64\UE4Editor\Inc\ExploreGameProject\ExploreGameProjectGameModeBase.generated.h
+D:\Github\GameProject\ExploreGameProject\Source\ExploreGameProject\Public\ExploreGameProject.h
