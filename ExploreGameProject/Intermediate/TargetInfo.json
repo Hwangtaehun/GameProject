@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "ExploreGameProject",
+			"Path": "D:\\Github\\GameProject\\ExploreGameProject\\Source\\ExploreGameProject.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ExploreGameProjectEditor",
+			"Path": "D:\\Github\\GameProject\\ExploreGameProject\\Source\\ExploreGameProjectEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
