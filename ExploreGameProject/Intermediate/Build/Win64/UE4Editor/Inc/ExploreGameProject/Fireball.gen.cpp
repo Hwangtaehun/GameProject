@@ -17,6 +17,9 @@ void EmptyLinkFunctionForGeneratedCodeFireball() {}
 	EXPLOREGAMEPROJECT_API UClass* Z_Construct_UClass_AFireball();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_ExploreGameProject();
+	ENGINE_API UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 // End Cross Module References
 	void AFireball::StaticRegisterNativesAFireball()
 	{
@@ -31,6 +34,19 @@ void EmptyLinkFunctionForGeneratedCodeFireball() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_movementComp_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_movementComp;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_collisionComp_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_collisionComp;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bodyMeshComp_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_bodyMeshComp;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -44,6 +60,35 @@ void EmptyLinkFunctionForGeneratedCodeFireball() {}
 		{ "ModuleRelativePath", "public/Fireball.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFireball_Statics::NewProp_movementComp_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "public/Fireball.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFireball_Statics::NewProp_movementComp = { "movementComp", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFireball, movementComp), Z_Construct_UClass_UProjectileMovementComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFireball_Statics::NewProp_movementComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFireball_Statics::NewProp_movementComp_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFireball_Statics::NewProp_collisionComp_MetaData[] = {
+		{ "Category", "Collision" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "public/Fireball.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFireball_Statics::NewProp_collisionComp = { "collisionComp", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFireball, collisionComp), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFireball_Statics::NewProp_collisionComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFireball_Statics::NewProp_collisionComp_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFireball_Statics::NewProp_bodyMeshComp_MetaData[] = {
+		{ "Category", "BodyMesh" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "public/Fireball.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFireball_Statics::NewProp_bodyMeshComp = { "bodyMeshComp", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFireball, bodyMeshComp), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFireball_Statics::NewProp_bodyMeshComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFireball_Statics::NewProp_bodyMeshComp_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFireball_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFireball_Statics::NewProp_movementComp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFireball_Statics::NewProp_collisionComp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFireball_Statics::NewProp_bodyMeshComp,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFireball_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFireball>::IsAbstract,
 	};
@@ -53,11 +98,11 @@ void EmptyLinkFunctionForGeneratedCodeFireball() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_AFireball_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AFireball_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AFireball_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AFireball_Statics::Class_MetaDataParams))
@@ -71,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodeFireball() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFireball, 2236146714);
+	IMPLEMENT_CLASS(AFireball, 2597521572);
 	template<> EXPLOREGAMEPROJECT_API UClass* StaticClass<AFireball>()
 	{
 		return AFireball::StaticClass();

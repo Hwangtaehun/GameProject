@@ -2,6 +2,8 @@
 
 
 #include "Fireball.h"
+#include <Components/SphereComponent.h>
+#include <GameFramework/ProjectileMovementComponent.h>
 
 // Sets default values
 AFireball::AFireball()
@@ -9,19 +11,47 @@ AFireball::AFireball()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	collisionComp = CreateDefaultSubobject<USphereComponent>(TEXT("CollisionComp"));
+	collisionComp->SetCollisionProfileName(TEXT("BlockAll"));
+	collisionComp->SetSphereRadius(13);
+	RootComponent = collisionComp;
+
+	bodyMeshComp = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("BodyMeshComp"));
+	bodyMeshComp->SetupAttachment(collisionComp);
+	bodyMeshComp->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	bodyMeshComp->SetRelativeScale3D(FVector(0.25f));
+
+	movementComp = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("MovementComp"));
+	movementComp->SetUpdatedComponent(collisionComp);
+	movementComp->InitialSpeed = 5000;
+	movementComp->MaxSpeed = 5000;
+	/*movementComp->bShouldBounce = true;
+	movementComp->Bounciness = 0.3f;*/
+
+	InitialLifeSpan = 2.0f;
 }
+
+AFireball::~AFireball() {}
 
 // Called when the game starts or when spawned
 void AFireball::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	FTimerHandle deathTimer;
+	GetWorld()->GetTimerManager().SetTimer(deathTimer, FTimerDelegate::CreateLambda([this]()->void {Destroy();}), 2.0f, false);
 }
 
 // Called every frame
 void AFireball::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	FVector newLocation = GetActorLocation() + GetActorForwardVector() * movementComp->InitialSpeed * DeltaTime;
+	SetActorLocation(newLocation);
+}
 
+void AFireball::Die()
+{
+	Destroy();
 }
 

@@ -14,6 +14,7 @@ class EXPLOREGAMEPROJECT_API AEPGPlayer : public ACharacter
 public:
 	// Sets default values for this character's properties
 	AEPGPlayer();
+	~AEPGPlayer();
 
 protected:
 	// Called when the game starts or when spawned
@@ -43,4 +44,11 @@ public:
 	void InputVertical(float value);
 	void InputJump();
 	void Move();
+
+	UPROPERTY(EditAnywhere)
+		class UArrowComponent* fireComp;
+	UPROPERTY(EditDefaultsOnly, Category = BulletFactor)
+		TSubclassOf<class AFireball> bulletFactory;
+
+	void InputFire();
 };

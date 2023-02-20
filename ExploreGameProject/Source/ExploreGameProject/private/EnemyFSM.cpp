@@ -17,6 +17,7 @@ UEnemyFSM::UEnemyFSM()
 	// ...
 }
 
+UEnemyFSM::~UEnemyFSM() {}
 
 // Called when the game starts
 void UEnemyFSM::BeginPlay()

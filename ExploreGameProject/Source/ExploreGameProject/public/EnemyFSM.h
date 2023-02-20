@@ -24,6 +24,7 @@ class EXPLOREGAMEPROJECT_API UEnemyFSM : public UActorComponent
 public:	
 	// Sets default values for this component's properties
 	UEnemyFSM();
+	~UEnemyFSM();
 
 protected:
 	// Called when the game starts

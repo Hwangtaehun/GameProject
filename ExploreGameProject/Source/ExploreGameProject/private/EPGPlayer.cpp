@@ -4,6 +4,8 @@
 #include "EPGPlayer.h"
 #include <GameFramework/SpringArmComponent.h>
 #include <Camera/CameraComponent.h>
+#include "Fireball.h"
+#include "Components/ArrowComponent.h"
 
 // Sets default values
 AEPGPlayer::AEPGPlayer()
@@ -30,7 +32,13 @@ AEPGPlayer::AEPGPlayer()
 
 	bUseControllerRotationYaw = true;
 	JumpMaxCount = 2;
+
+	fireComp = CreateDefaultSubobject<UArrowComponent>(TEXT("Fire Position"));
+	fireComp->SetupAttachment(RootComponent);
+	fireComp->SetRelativeLocation(FVector(70, 0, 50));
 }
+
+AEPGPlayer::~AEPGPlayer(){}
 
 // Called when the game starts or when spawned
 void AEPGPlayer::BeginPlay()
@@ -57,6 +65,7 @@ void AEPGPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 	PlayerInputComponent->BindAxis(TEXT("Horizontal"), this, &AEPGPlayer::InputHorizontal);
 	PlayerInputComponent->BindAxis(TEXT("Vertical"), this, &AEPGPlayer::InputVertical);
 	PlayerInputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &AEPGPlayer::InputJump);
+	PlayerInputComponent->BindAction(TEXT("Fire"), IE_Pressed, this, &AEPGPlayer::InputFire);
 }
 
 void AEPGPlayer::Turn(float value)
@@ -89,5 +98,11 @@ void AEPGPlayer::Move()
 	direction = FTransform(GetControlRotation()).TransformVector(direction);
 	AddMovementInput(direction);
 	direction = FVector::ZeroVector;
+}
+
+void AEPGPlayer::InputFire()
+{
+	FTransform  firePosition = fireComp->GetSocketTransform(TEXT("Fire Position"));
+	GetWorld()->SpawnActor<AFireball>(bulletFactory, firePosition);
 }
 
