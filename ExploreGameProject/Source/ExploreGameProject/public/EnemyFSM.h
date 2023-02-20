@@ -42,4 +42,19 @@ public:
 	void AttackState();
 	void DamageState();
 	void DieState();
+	
+	UPROPERTY(EditDefaultsOnly, Category = FSM)
+		float idleDelayTime = 2;
+	float currentTime = 0;
+
+	UPROPERTY(VisibleAnywhere, Category = FSM)
+		class AEPGPlayer* target;
+	UPROPERTY()
+		class AEnemy* me;
+	UPROPERTY(EditAnywhere, Category = FSM)
+		float attackRange = 150.0f;
+	UPROPERTY(EditAnywhere, Category = FSM)
+		float attackDelayTime = 2.0f;
+
+	void OnDamageProcess();
 };

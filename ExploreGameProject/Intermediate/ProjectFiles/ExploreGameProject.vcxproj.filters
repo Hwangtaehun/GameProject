@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\ExploreGameProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{B48EDD2C-8BF7-4A4C-9704-5F453B4F8BB2}</UniqueIdentifier>
+      <UniqueIdentifier>{4A0ADD59-B46F-4969-A432-1B802B882A60}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ExploreGameProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{AD17B811-6B1C-47C5-A194-EC2F4BFB7377}</UniqueIdentifier>
+      <UniqueIdentifier>{B2DB8608-EC8E-4CA7-80EC-15258E53E32E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,13 +27,13 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\ExploreGameProject">
-      <UniqueIdentifier>{6C467BC0-3DB1-423C-B604-B1D71C1EE728}</UniqueIdentifier>
+      <UniqueIdentifier>{435D990E-5DD6-4CBF-B3D0-80B6DB14498A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ExploreGameProject\ExploreGameProject.Build.cs">
       <Filter>Source\ExploreGameProject</Filter>
     </None>
     <Filter Include="Source\ExploreGameProject\private">
-      <UniqueIdentifier>{4C776EEA-14E2-4267-B4FF-AC55F888A801}</UniqueIdentifier>
+      <UniqueIdentifier>{061905B0-C9B8-47D9-993D-42E12B8C1CD7}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\ExploreGameProject\private\Enemy.cpp">
       <Filter>Source\ExploreGameProject\private</Filter>
@@ -50,8 +50,11 @@
     <ClCompile Include="..\..\Source\ExploreGameProject\private\ExploreGameProjectGameModeBase.cpp">
       <Filter>Source\ExploreGameProject\private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\ExploreGameProject\private\Fireball.cpp">
+      <Filter>Source\ExploreGameProject\private</Filter>
+    </ClCompile>
     <Filter Include="Source\ExploreGameProject\public">
-      <UniqueIdentifier>{96C2E14F-D703-4E77-BBBB-53CCF75CCA8E}</UniqueIdentifier>
+      <UniqueIdentifier>{F8121A22-0CD3-4FB4-B3EE-74480C2ADD2A}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\ExploreGameProject\public\Enemy.h">
       <Filter>Source\ExploreGameProject\public</Filter>
@@ -66,6 +69,9 @@
       <Filter>Source\ExploreGameProject\public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\ExploreGameProject\public\ExploreGameProjectGameModeBase.h">
+      <Filter>Source\ExploreGameProject\public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ExploreGameProject\public\Fireball.h">
       <Filter>Source\ExploreGameProject\public</Filter>
     </ClInclude>
   </ItemGroup>

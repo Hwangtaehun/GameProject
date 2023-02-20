@@ -18,6 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeEnemyFSM() {}
 	EXPLOREGAMEPROJECT_API UClass* Z_Construct_UClass_UEnemyFSM_NoRegister();
 	EXPLOREGAMEPROJECT_API UClass* Z_Construct_UClass_UEnemyFSM();
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
+	EXPLOREGAMEPROJECT_API UClass* Z_Construct_UClass_AEPGPlayer_NoRegister();
+	EXPLOREGAMEPROJECT_API UClass* Z_Construct_UClass_AEnemy_NoRegister();
 // End Cross Module References
 	static UEnum* EEnemyState_StaticEnum()
 	{
@@ -97,6 +99,26 @@ void EmptyLinkFunctionForGeneratedCodeEnemyFSM() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mState_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_mState;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_idleDelayTime_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_idleDelayTime;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_target_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_target;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_me_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_me;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_attackRange_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_attackRange;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_attackDelayTime_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_attackDelayTime;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -121,9 +143,48 @@ void EmptyLinkFunctionForGeneratedCodeEnemyFSM() {}
 	};
 #endif
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UEnemyFSM_Statics::NewProp_mState = { "mState", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemyFSM, mState), Z_Construct_UEnum_ExploreGameProject_EEnemyState, METADATA_PARAMS(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_mState_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_mState_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemyFSM_Statics::NewProp_idleDelayTime_MetaData[] = {
+		{ "Category", "FSM" },
+		{ "ModuleRelativePath", "public/EnemyFSM.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UEnemyFSM_Statics::NewProp_idleDelayTime = { "idleDelayTime", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemyFSM, idleDelayTime), METADATA_PARAMS(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_idleDelayTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_idleDelayTime_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemyFSM_Statics::NewProp_target_MetaData[] = {
+		{ "Category", "FSM" },
+		{ "ModuleRelativePath", "public/EnemyFSM.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEnemyFSM_Statics::NewProp_target = { "target", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemyFSM, target), Z_Construct_UClass_AEPGPlayer_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_target_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_target_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemyFSM_Statics::NewProp_me_MetaData[] = {
+		{ "ModuleRelativePath", "public/EnemyFSM.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEnemyFSM_Statics::NewProp_me = { "me", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemyFSM, me), Z_Construct_UClass_AEnemy_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_me_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_me_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemyFSM_Statics::NewProp_attackRange_MetaData[] = {
+		{ "Category", "FSM" },
+		{ "ModuleRelativePath", "public/EnemyFSM.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UEnemyFSM_Statics::NewProp_attackRange = { "attackRange", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemyFSM, attackRange), METADATA_PARAMS(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_attackRange_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_attackRange_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemyFSM_Statics::NewProp_attackDelayTime_MetaData[] = {
+		{ "Category", "FSM" },
+		{ "ModuleRelativePath", "public/EnemyFSM.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UEnemyFSM_Statics::NewProp_attackDelayTime = { "attackDelayTime", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemyFSM, attackDelayTime), METADATA_PARAMS(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_attackDelayTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_attackDelayTime_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UEnemyFSM_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_mState_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_mState,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_idleDelayTime,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_target,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_me,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_attackRange,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_attackDelayTime,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UEnemyFSM_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UEnemyFSM>::IsAbstract,
@@ -152,7 +213,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemyFSM() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UEnemyFSM, 2858566814);
+	IMPLEMENT_CLASS(UEnemyFSM, 3570711048);
 	template<> EXPLOREGAMEPROJECT_API UClass* StaticClass<UEnemyFSM>()
 	{
 		return UEnemyFSM::StaticClass();
